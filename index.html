@@ -1,13 +1,552 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Ashwin Sanjay</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <div class="container">
+      <a href="#" class="nav-link" target="_top">
+        <button class="btn btn-primary btn-lg btn-home m-2" id="homeButton">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-house-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+          </svg>
+        </button>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#serviceandactivities" class="nav-link">Service/Activities</a>
+          </li>
+          <li class="nav-item">
+            <a href="./resume.html" class="nav-link">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <section class="bg-dark text-light p-5 text-center"> <!-- text-sm-start animate__animated animate__backInLeft -->
+    <div class="container pt-4">
+      <div class="d-sm-flex align-items-center">
+        <div class="col pt-4 wow animate__animated animate__backInLeft">
+          <h1 class="">Ashwin <span class="text-highlighted">Sanjay</span></h1>
+          <p class="lead">
+            Computer Engineering Honors Sophomore at Texas A&M University
+          </p>
+          <a href="https://github.com/" class="text-decoration-none" target="_blank">
+            <button class="btn btn-primary btn-lg btn-github m-2" id="githubButton">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+            </button>
+          </a>
+          <a href="https://www.linkedin.com/" class="text-decoration-none" target="_blank">
+            <button class="btn btn-primary btn-lg btn-linkedin m-2" id="linkedinButton">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg>
+            </button>
+          </a>
+        </div>
+        <div class="container col">
+          <img class="rounded img-fluid d-none flex-row-reverse d-sm-block" src="IMG_7063.jpg" alt="">
+        </div>
+
+      </div>
+      <a id="experience"></a>
+    </div>
+
+  </section>
+
+
+  <section>
+    <div class="bg-lb text-dark p-5">
+      <div class="container">
+
+        <h3> Experience </h3>
+        <div class="row justify-content-center">
+          <div class="p-4 col-lg-4 col-md-8">
+
+            <h4><b>Estimation, Design and Planning Laboratory</b></h4>
+            <h5 class="fw-light"><b>Research Assistant</b></h5>
+            <p>
+              Starting September last year, I joined the 
+              <a href="http://edplab.org/" class="text-dark" target="_blank">
+                <span class="fst-italic">Estimation, Design and Planning
+                  Laboratory</span>
+              </a>
+              and was tasked with aiding the graduate students run physics simulations for their robotics
+              controls research.
+              <br>
+              I work with the <span class="fst-italic">MuJoCo</span> (Multi-Joint dynamics with Contact) physics engine,
+              where I control the API using Python and create/edit models using XML.
+              <br>
+              Furthermore, to gain an understanding
+              of the mathematics used by the researchers, I audited graduate lectures by the lab's PI.
+              <br>
+              <a href="http://edplab.org/" class="text-dark" target="_blank">
+                <span class="fst-italic">EDP Lab Homepage</span>
+              </a>
+            </p>
+            <div class="d-lg-none">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/34892308/" target="_blank">
+                <img class="rounded" src="EDPLab_sized.png" alt="Splunk" width="80%">
+              </a>
+            </div>
+
+          </div>
+          <div class="p-4 col-lg-4 col-md-8">
+            <h4><b>Janssen Pharmaceuticals </b></h4>
+            <h5 class="fw-light"><b>Research and Development Intern</b></h5>
+            <p>
+              During the summer of 2022, I worked as a Research and Development Intern for 
+              <a href="https://www.janssen.com/us/" class="text-dark" target="_blank">
+                <span class="fst-italic">Janssen Pharmaceuticals</span>
+              </a>
+              <br>
+              While there, I solved the challenge of measuring the volume of bubbles within pharmaceutical
+              filling containers (e.g. vials). I created a device that used the centripetal force to regularize shape of
+              the
+              bubbles, tackling the difficult nature of measuring irregular, fluid objects. The project involved
+              embedded
+              C++ programming, circuit design, and a 3-step statistical qualification that yielded results with <span
+                class="fw-bold">less than 0.4% error</span>.
+              This technology is being used to validate the VarioSys filling system at the billion-dollar Remicade
+              manufacturing facility in Malvern, PA.
+              <br>
+              Beyond my main project, I helped write proposals for a fill-finish computational fluid dynamics modeler
+              and an optical shear sensor, and I
+              shadowed professional engineers.
+              <br>
+              
+            </p>
+            <div class="d-lg-none">
+              <a href="https://tamudatathon.com/" target="_blank">
+                <img class="rounded" src="janssen_logo.webp" alt="TAMU Datathon" width="80%">
+              </a>
+            </div>
+          </div>
+          <div class="p-4 col-lg-4 col-md-8">
+
+            <h4><b>Mixed Reality Laboratory</b></h4>
+            <h5 class="fw-light"><b>Research Intern</b></h5>
+            <p>
+              During the Summer of 2020, I joined the <span class="fst-italic">Mixed Reality Laboratory</span> at the
+              <span class="fst-italic">University of Illinois, Chicago</span>,
+              an organization dedicated to bringing virtual and augmented reality to the field of medicine.
+              <br>
+              I worked on a virtual reality (VR) based device called <span class="fst-italic">CathSym</span> aimed at
+              bringing 3D visualization and haptic feedback to catheterization
+              training. I developed solutions within the Unity development engine and learned C# to controll the
+              scripting API.
+              I was mainly focused on incorporating optimal UI characteristics, and towards this end I interviewed
+              medical professionals and design researchers.
+              <br>
+              My most significant contribution to the project was redesigning the visual simulation of the catheter
+              within the graphics interface, which made
+              <span class="fw-bold">over a 40%</span> in the resource costs usage listed in the Unity profiler.
+              <br>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/34892308/" class="text-dark" target="_blank">
+                Find the <span class="fst-italic">CathSym</span> paper here.
+              </a>
+            </p>
+            <div class="d-lg-none">
+              <a href="https://pubmed.ncbi.nlm.nih.gov/34892308/" target="_blank">
+                <img class="rounded" src="uic_white.png" alt="UIC" width="80%" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-4 col-md-8 d-none d-lg-block">
+            <a href="https://pubmed.ncbi.nlm.nih.gov/34892308/" target="_blank">
+              <img class="rounded" src="EDPLab_sized.png" alt="Splunk" width="80%">
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-8 d-none d-lg-block">
+            <a href="https://tamudatathon.com/" target="_blank">
+              <img class="rounded" src="janssen_logo.webp" alt="TAMU Datathon" width="80%">
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-8 d-none d-lg-block">
+            <a href="https://pubmed.ncbi.nlm.nih.gov/34892308/" target="_blank">
+              <img class="rounded" src="uic_white.png" alt="UIC" width="80%" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <a id="projects"></a>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-dark text-light p-5">
+      <div class="container align-items-center">
+        <h3> Projects </h3>
+        <!-- data-bs-ride="false" -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="p-4 col-lg-5 col-md-7">
+
+                    <h4><b>Methadone Dispensing Apparatus <br> (SLING Health TAMU)</b></h4>
+                    <p>
+                      Designed a device to dispense Methadone (opioid withdrawal medication) according to governmental
+                      needs as part of a multidisciplinary team including medical and grad students. Dispensing control,
+                      home administration, and tamper protection were
+                      addressed according to the NIH Product Descriptions Document. Further, a mobile app was designed,
+                      and a business case was created, both of which incorporated characteristics based on interviews
+                      of professionals in the field including doctors and clinics.
+
+                      <br>
+                      I contributed significantly to all facets of the project, including the design, business case, and
+                      monetization model, and I presented to
+                      academic and industry panelists several times. I was named a <span class="fst-italic">SLING
+                        Health</span> fellow for my contribution to the project, and a grant was secured for the
+                      project.
+                      <a href="tech_report.html" class="text-highlighted" target="_blank">
+                        Find the technical report here.
+                      </a>
+                    </p>
+
+                  </div>
+                  <div class="p-4 col-lg-5 col-md-7">
+                    <img data-src="methadone_app.jpg" class="rounded w-100 shadow-1-strong mb-4" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="p-4 col-lg-5 col-md-7">
+
+                    <h4><b>BlimpServe</b></h4>
+                    <p>
+                      I co-designed a proprietary medicine transport airship drone to cost-effecticely address supply
+                      chain issues, including last-mile locations (difficult-to-reach delivery sites) and cold-chain
+                      transport (handling of temperature-sensitive medicine)
+                      in underserved/impoverished areas.
+                      <br>
+                      <span class="fst-italic">BlimpServe</span> addresses last-mile location challenges by avioiding
+                      costly infrastructure including roads or airports.
+                      Lightweight solar panels were implemented to take advantage of airships' large surface area and
+                      direct view of the sun, improving efficiency and range.
+                      <br>
+                      Cold-chain transport challenges are tackled by harnessing low ambient temperatures at high
+                      altitudes and abundant solar energy.
+                      <br>
+                      A 10-DOF flight controller and vectored thrust propeller were used to control <span
+                        class="fst-italic">BlimpServe</span>.
+                      The most significant techical achievement was the flight-path charting program. The A* algorithm
+                      was used with NOAA wind current data, and path-smoothing was done via gradient descent.
+                      <span class="text-highlighted">Web implementation coming soon!</span>
+                    </p>
+
+                  </div>
+
+                  <div class="p-4 col-lg-5 col-md-7">
+
+                    <img data-src="blimp_app.png" class="rounded w-100 shadow-1-strong mb-4" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="p-4 col-lg-5 col-md-7">
+
+                    <h4><b>Scout Infinity</b></h4>
+                    <p>
+                      I co-designed an augmented smartphone case using Internet of Things (IoT) technology to improve
+                      the smartphone experience and democratize long-range communication.
+                      <br>
+                      The <span class="fst-italic">Infinity</span> enables by free communication by connecting your
+                      mobile device with the LoRaWAN low-power wide area network (LPWAN) via Bluetooth Low-Energy.
+                      <br>
+                      Additionally, lost phones that have lost power can be geolocated by aggregating
+                      last-collected GPS data from the phone with <span class="fst-italic">Infinity</span>'s own LPWAN
+                      triangulation and 6-DOF sensor data.
+                      <br>
+                      Finally, extremely low-power components/technologies are used, and the case passively charges via
+                      NFC,
+                      so you never need to worry about running out of power.
+                      <br>
+                      <a href="https://centipede5.github.io/scout_infinity/" class="text-highlighted" target="_blank">
+                        Click this link for more info.
+                      </a>
+
+                    </p>
+
+
+                  </div>
+
+                  <div class="p-4 col-lg-5 col-md-7">
+
+                    <img data-src="scout_works.png"
+                      class="rounded w-100 shadow-1-strong mb-4 .img-fluid. max-width: 50%" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev opacity-25" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next opacity-25" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <a id="serviceandactivities"></a>
+    </div>
+  </section>
+
+
+
+
+  <section>
+    <div class="bg-lb text-dark p-5">
+      <div class="container">
+        <h3> Service and Activities </h3>
+        <div class="row">
+          <div class="p-4 col-lg-4 col-md-8">
+
+            <h4><b>ΧΨΒ Culture and Service Fraternity</b></h4>
+            <p>
+              Chi Psi Beta is a fraternity whose main goals are to "create a strong brotherhood" that "assimilates South
+              Asian and American cultures" and
+              "gives back to the community through service projects". As part of Chi Psi Beta, I collaboratively
+              organize and participate in service projects,
+              including community maintainance such as street-cleaning and yardwork. Furthermore, I help organize and
+              work fundraising events, including a formal
+              to raise money for mental health awareness and a blood drive. Our charities are Adopt-A-Street, blood
+              donation, and mental health. Finally, I help
+              set-up and participate in cultural events, such as our fraternity formal and Diwali night. Being part of
+              an accomplished brotherhood with such strong values
+              motivates me to better myself and allows me to build lifelong friends.
+
+            </p>
+
+          </div>
+          <div class="p-4 col-lg-4 col-md-8">
+            <h4><b>Conway-Fitzhugh International Honors Leadership Seminar</b></h4>
+            <p>
+              I was selected as a part of "30 of Texas A&M University's top incoming freshmen" to engage in academic
+              planning, develop leadership skills,
+              develop a passion for international travel, and learn about the rich culture of Italy through experience.
+              We engaged in the academic planning
+              and leadership training through a seminar class, and during the Spring Break of 2022, we traveled to
+              Italy. We toured Florence, Castiglion Fiorentino,
+              Cortona, Assisi, and Rome, learning in-depth about Catholic and Renaissance art and culture. I made
+              lasting connections, learned skills to help prepare me
+              for both college and my career, and instilled in me a passion for traveling.
+
+            </p>
+          </div>
+          <div class="p-4 col-lg-4 col-md-8">
+            <h4><b>Aggie Leaders of Tomorrow (Angel Tree)</b></h4>
+            <p>
+              As part of the Angel Tree project for Aggie Leaders of Tomorrow, I helped raise funds to buy Christmas
+              gifts for economically disadvantaged children in the Brazos Valley area in Texas
+              for the Salvation Army. I gathered donations, created promotional material, brought awareness about the
+              project to other organizations, and helped set up fundraising sites.
+              Beyond my work for Angel Tree, I participated in leadership and team-building activities along with
+              attending and presenting at organizational events. This experience
+              sparked in me a passion for service, and the supporting community around me taught me invaluable
+              team-building and leadership skills.
+            </p>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <img data-src="italy_group.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+
+            <img data-src="hill_group1.JPG" class="w-100 shadow-1-strong rounded mb-4" />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img data-src="rithesh1.png" class="w-100 shadow-1-strong rounded mb-4" />
+
+            <img data-src="msc_alot.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img data-src="big_day.webp" class="w-100 shadow-1-strong rounded mb-4" />
+
+            <img data-src="coffee.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <footer>
+    <div class="bg-dark py-3">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-lg-4 col-md-6">
+            <p class="text-light mb-0">Copyright &copy Ashwin Sanjay 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</footer>
+
+
+<style>
+  .bg-lb {
+    --bs-bg-opacity: 1;
+    background-color: #5bc2c2 !important;
+  }
+
+  .text-highlighted {
+    color: #7cc;
+    border-color: #5bc2c2;
+  }
+
+  .btn-github {
+    color: #212529;
+    background-color: #7cc;
+    border-color: #5bc2c2;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .btn-linkedin {
+    color: #212529;
+    background-color: #7cc;
+    border-color: #5bc2c2;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .btn-home {
+    color: #7cc;
+    background-color: #212529;
+    border-color: #212529;
+  }
+</style>
+
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 50px auto;
+    box-shadow: 0 0 50px #333;
+  }
+
+  .gallery-item {
+    width: 73%;
+  }
+
+  .gallery-item>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  img {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+
+  img[data-src] {
+    opacity: 0;
+  }
+</style>
+
+
+<script type='text/javascript'>
+  (function () {
+    var elements = document.querySelectorAll('img[data-src]');
+    var index = 0;
+    var lazyLoad = function () {
+      if (index >= elements.length) return;
+      var item = elements[index];
+      if ((this.scrollY + this.innerHeight) > item.offsetTop) {
+        var src = item.getAttribute("data-src");
+        item.src = src;
+        item.addEventListener('load', function () {
+          item.removeAttribute('data-src');
+        });
+        index++;
+        lazyLoad();
+      }
+    };
+    var init = function () {
+      window.addEventListener('scroll', lazyLoad);
+      lazyLoad();
+    };
+    return init();
+  })();  
+</script>
+
+
+<script type='text/javascript'>
+  $(document).ready(function () {
+    $('.carousel').carousel({
+      interval: 10000
+    })
+  });    
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+  integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
